@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --color-blue: #5594FF;
+  --color-orange: #FEA82E;
+  --color-green: #2FBF84;
+  --color-text: #4A5463;
+  --color-gray-light: #F2F6FB;
+  --color-gray-dark: #A5B0C2;
+}
+
+.container {
+  @apply w-[95%] md:w-[90%] pl-4 pr-4 ml-auto mr-auto;
+}
+
+.after {
+  position: absolute;
+  content: '';
+  border-left: 10px transparent solid;
+  border-right: 10px transparent solid ;
+  border-top: 10px transparent solid;
+  border-bottom: 10px var(--color-blue) solid;
+  top: -20px;
+}
